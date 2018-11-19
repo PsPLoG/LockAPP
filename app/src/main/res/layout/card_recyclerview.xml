@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="24dp"
+    android:layout_marginBottom="46dp"
+    android:gravity="center_horizontal"
+    android:orientation="horizontal">
+
+    <LinearLayout
+
+        android:layout_width="61dp"
+        android:layout_height="63.8dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <CheckBox
+
+            android:id="@+id/cb_checkbox_card"
+            android:layout_width="30dp"
+            android:layout_height="21dp"
+            android:layout_gravity="center" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_card_image"
+        android:layout_width="113.3dp"
+        android:layout_height="63.8dp"
+        android:background="@drawable/card3" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="63.8dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_limitnum"
+            android:layout_width="66.7dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:letterSpacing="0.09"
+            android:lineSpacingExtra="2sp"
+            android:text="한도수치"
+            android:textColor="#adadad"
+            android:textSize="13.3sp" />
+
+        <Button
+            android:id="@+id/bt_setlimit"
+            android:layout_width="66.7dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="3dp"
+            android:letterSpacing="0.09"
+            android:lineSpacingExtra="1.3sp"
+            android:text="수정"
+            android:textColor="#61000000"
+            android:textSize="10.7sp" />
+    </LinearLayout>
+</LinearLayout>

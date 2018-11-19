@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp">
+
+    <ImageView
+        android:id="@+id/iv_mycard_benefit_info_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="18dp"
+        android:src="@drawable/app_mycard_benefit_info_ic_food"
+        />
+    <TextView
+        android:layout_toRightOf="@+id/iv_mycard_benefit_info_icon"
+        android:id="@+id/tv_mycard_benefit_info_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="[food] 음식업종"
+        android:textSize="12.7sp"
+        android:textColor="#505050"
+        android:letterSpacing="0.09"
+        android:lineSpacingExtra="2sp"/>
+    <TextView
+        android:layout_toRightOf="@+id/tv_mycard_benefit_info_title"
+        android:id="@+id/tv_mycard_benefit_info_discount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="건당 2천원 청구할인"
+        android:textSize="12.7sp"
+        android:textColor="#f1c13b"
+        android:letterSpacing="0.09"
+        android:lineSpacingExtra="2sp"/>
+    <TextView
+        android:layout_below="@+id/tv_mycard_benefit_info_discount"
+        android:id="@+id/tv_mycard_benefit_info_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="음식/주점"
+        android:textSize="10sp"
+        android:textColor="#929292"
+        android:letterSpacing="0.09"
+        android:lineSpacingExtra="1.7sp"
+        android:layout_toRightOf="@+id/iv_mycard_benefit_info_icon"/>
+
+    <LinearLayout
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/tv_mycard_benefit_info_content"
+        android:background="#b0b0b0"></LinearLayout>
+</RelativeLayout>

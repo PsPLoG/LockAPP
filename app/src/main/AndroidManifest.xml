@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.kmh.lockapp">
+
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+
+        </activity>
+        <activity android:name=".LockScreen" />
+
+        <service android:name=".ScreenService" />
+
+        <receiver android:name=".ScreenReceiver" />
+
+        <activity android:name=".KbMainActivity">
+
+        </activity>
+
+        <activity android:name=".activity.AutoLoginMainActivity">
+        </activity>
+        <activity android:name=".activity.SubAutoLoginActivity"></activity>
+
+        <activity
+            android:name=".activity.SplashActivity"
+            android:theme="@style/AppTheme"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.App_LoginActivity" />
+        <activity android:name=".activity.SignupActivity"></activity>
+        <activity android:name=".activity.Detail_Point_StoreActivity" />
+        <activity android:name=".activity.AppPointPointPlusActivity" />
+        <activity android:name=".activity.BuyPopActivity" android:theme="@android:style/Theme.Dialog" />
+        <activity android:name=".activity.LimitSettingActivity" />
+        <activity android:name=".activity.LockScreenSettingActivity" />
+        <activity android:name=".activity.AccountSettingActivity"></activity>
+        <activity android:name=".activity.ThreeButtonActivity"></activity>
+        <activity android:name=".activity.CardUsingShapeActivity"></activity>
+
+    </application>
+
+</manifest>

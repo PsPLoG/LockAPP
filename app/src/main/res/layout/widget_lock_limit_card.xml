@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="horizontal">
+
+    <FrameLayout
+        android:id="@+id/fl_lock_limit1"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_gravity="center"
+        android:layout_marginRight="16dp">
+
+        <ProgressBar
+            android:id="@+id/pb_lock_limit1"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:max="100"
+            android:progress="100"
+            android:progressDrawable="@drawable/vertical_bar_green" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/lock_cardbar_01_shape" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/fl_lock_limit2"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_gravity="center"
+        android:layout_marginRight="16dp">
+
+        <ProgressBar
+            android:id="@+id/pb_lock_limit2"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:max="100"
+            android:progress="100"
+            android:progressDrawable="@drawable/vertical_bar_red" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/lock_cardbar_01_shape" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/fl_lock_limit3"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_gravity="center">
+
+        <ProgressBar
+            android:id="@+id/pb_lock_limit3"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:max="100"
+            android:progress="100"
+            android:progressDrawable="@drawable/vertical_bar_yellow" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/lock_cardbar_01_shape" />
+    </FrameLayout>
+</LinearLayout>

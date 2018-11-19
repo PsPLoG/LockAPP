@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/Detail_point_product"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="97.2dp">
+    <ImageView
+        android:id="@+id/iv_detail_pointstore_product"
+        android:src="@drawable/app_point_pointstore_img_item_1"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="16dp"
+        android:layout_width="83.3dp"
+        android:layout_height="83.3dp" />
+    <RelativeLayout
+        android:layout_centerVertical="true"
+        android:layout_marginHorizontal="16dp"
+        android:layout_toRightOf="@+id/iv_detail_pointstore_product"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/tv_rv_detail_product_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="13.3sp"
+                    android:textColor="#b3000000"
+                    android:letterSpacing="0.09"
+                    android:lineSpacingExtra="2sp"
+                    android:gravity="center_horizontal"
+                   android:text="[CU_롯데] 초코빼빼로" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/rv_tv_detail_store_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4.7dp"
+                android:gravity="center_horizontal"
+                android:letterSpacing="0.09"
+                android:lineSpacingExtra="2.7sp"
+                android:text="2400포인트"
+                android:textColor="#b3000000"
+                android:textSize="16.7sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </RelativeLayout>
+
+<View
+    android:layout_width="300.3dp"
+    android:layout_height="0.3dp"
+    android:layout_alignParentBottom="true"
+    android:layout_centerVertical="true"
+    android:layout_centerInParent="true"
+    android:background="#707070" />
+
+</RelativeLayout>

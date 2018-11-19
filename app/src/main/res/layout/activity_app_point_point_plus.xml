@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.Detail_Point_StoreActivity">
+    <LinearLayout
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="51dp">
+
+        <TextView
+            android:layout_marginTop="11.2dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center_horizontal"
+            android:letterSpacing="0.09"
+            android:lineSpacingExtra="2.7sp"
+            android:text="포인트 채우기"
+            android:textColor="#505050"
+            android:textSize="16.7sp"
+            android:textStyle="bold" />
+        <View
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="0.3dp"
+            android:layout_centerInParent="true"
+            android:background="#707070"/>
+    </LinearLayout>
+    <ImageView
+        android:layout_marginTop="13.3dp"
+        android:layout_gravity="center"
+        android:src="@drawable/pizzaadvertisement"
+        android:layout_width="333.3dp"
+        android:layout_height="366.7dp" />
+
+    <TextView
+        android:layout_marginTop="21.7dp"
+        android:layout_marginLeft="25.3dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:letterSpacing="0.09"
+        android:lineSpacingExtra="3sp"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:text="피자헛 프리미엄피자" />
+
+    <TextView
+        android:layout_marginTop="8.3dp"
+        android:layout_marginLeft="25.3dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:letterSpacing="0.09"
+        android:lineSpacingExtra="3sp"
+        android:textColor="#ffca3f"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:text="포인트 지급" />
+    <Button
+        android:layout_marginTop="22.9dp"
+        android:layout_gravity="center"
+        android:background="@drawable/app_signup_btn"
+        android:layout_width="252dp"
+        android:layout_height="42.1dp" />
+</LinearLayout>

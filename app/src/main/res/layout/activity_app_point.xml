@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="320dp"
+        android:layout_marginTop="15.7dp"
+        android:layout_height="86.7dp"
+        android:background="#f6f6f6"
+        android:layout_gravity="center">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="16dp">
+
+            <ImageView
+                android:id="@+id/iv_mypoint_point_icon"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/app_point_mypoint_ic" />
+
+            <TextView
+                android:id="@+id/tv_mypoint_point_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_toRightOf="@id/iv_mypoint_point_icon"
+                android:textSize="13.3sp"
+                android:textColor="#adadad"
+                android:letterSpacing="0.01"
+                android:lineSpacingExtra="2sp"
+                android:text="내 포인트"
+                android:gravity="center_horizontal" />
+
+            <TextView
+                android:id="@+id/tv_mypoint_point"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_mypoint_point_text"
+                android:layout_marginLeft="16dp"
+                android:layout_toRightOf="@id/iv_mypoint_point_icon"
+                android:letterSpacing="0.01"
+                android:text="7,384 P"
+                android:textColor="#142434"
+                android:textSize="16.7sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </LinearLayout>
+<LinearLayout
+    android:layout_marginTop="13.3dp"
+    android:layout_gravity="center"
+    android:background="@drawable/app_point_pointstore_box"
+    android:orientation="vertical"
+    android:layout_width="340.9dp"
+    android:layout_height="200dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="27.5dp"
+        android:layout_marginTop="6.7dp"
+        android:gravity="center_horizontal"
+        android:letterSpacing="0.01"
+        android:lineSpacingExtra="2sp"
+        android:text="포인트 상점"
+        android:textColor="#505050"
+
+        android:textSize="13.3sp"
+        android:textStyle="bold" />
+    <android.support.v7.widget.RecyclerView
+        android:layout_gravity="center"
+        android:id="@+id/recycler_point_store"
+        android:layout_marginTop="20.7dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="300dp"
+        android:layout_height="116.7dp"
+        android:background="#ffffff"
+        />
+
+    <Button
+        android:id="@+id/btn_app_point_moresee"
+        android:layout_width="50dp"
+        android:layout_height="26dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="8dp"
+        android:background="#fedc82"
+        android:gravity="center_horizontal|center"
+        android:letterSpacing="0.01"
+        android:lineSpacingExtra="1.7sp"
+        android:text="더보기"
+        android:textColor="#ffffff"
+        android:textSize="10sp" />
+</LinearLayout>
+
+    <LinearLayout
+        android:background="@drawable/app_point_ad_box"
+        android:layout_width="320dp"
+        android:layout_height="207dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="14.3dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="17.3dp"
+            android:layout_marginTop="6.7dp"
+            android:gravity="center_horizontal"
+            android:letterSpacing="0.01"
+            android:lineSpacingExtra="2sp"
+            android:text="포인트 채우기"
+            android:textColor="#505050"
+            android:textSize="13.3sp"
+            android:textStyle="bold" />
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_gravity="center"
+            android:id="@+id/recycler_view_filpoint"
+            android:layout_marginTop="6.7dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            />
+    </LinearLayout>
+</LinearLayout>
+
+

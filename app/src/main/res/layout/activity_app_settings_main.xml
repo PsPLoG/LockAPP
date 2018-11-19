@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    tools:context=".activity.AppSettingsMainActivity">
+<LinearLayout
+    android:layout_marginTop="51.7dp"
+    android:orientation="vertical"
+    android:layout_gravity="top"
+    android:background="@drawable/app_settings_box_gray"
+    android:layout_width="320dp"
+    android:layout_height="436dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="62dp"
+        android:gravity="center_horizontal"
+        android:letterSpacing="0.01"
+        android:lineSpacingExtra="3sp"
+        android:text="Key 님"
+        android:textColor="#142434"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+    <ImageView
+        android:id="@+id/btn_setting_moveto_account"
+        android:layout_marginTop="28dp"
+        android:layout_gravity="center"
+        android:layout_width="300dp"
+        android:layout_height="39dp"
+        android:src="@drawable/app_settings_account"/>
+    <ImageView
+        android:id="@+id/btn_movetio_setting_limit_Setting"
+        android:layout_marginTop="14.3dp"
+        android:layout_gravity="center"
+        android:layout_width="300dp"
+        android:layout_height="39dp"
+        android:src="@drawable/app_settings_limit"/>
+    <ImageView
+        android:id="@+id/btn_setting_moveto_setting_lockscreen"
+        android:layout_marginTop="14.3dp"
+        android:layout_gravity="center"
+        android:layout_width="300dp"
+        android:layout_height="39dp"
+        android:src="@drawable/app_settings_lockscreen"/>
+    <ImageView
+        android:id="@+id/btn_setting_moveto_notice"
+        android:layout_marginTop="14.3dp"
+        android:layout_gravity="center"
+        android:layout_width="300dp"
+        android:layout_height="39dp"
+        android:src="@drawable/app_settings_notice"/>
+    <ImageView
+        android:id="@+id/btn_setting_moveto_help"
+        android:layout_marginTop="14.3dp"
+        android:layout_gravity="center"
+        android:layout_width="300dp"
+        android:layout_height="39dp"
+        android:src="@drawable/app_settings_help"/>
+    <ImageView
+        android:id="@+id/btn_setting_moveto_service"
+        android:layout_marginTop="14.3dp"
+        android:layout_gravity="center"
+        android:layout_width="300dp"
+        android:layout_height="39dp"
+        android:src="@drawable/app_settings_service"/>
+</LinearLayout>
+
+</LinearLayout>

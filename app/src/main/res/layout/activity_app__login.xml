@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#fedc82"
+    tools:context=".App_LoginActivity">
+
+    <ImageView
+        android:layout_width="82.5dp"
+        android:layout_height="82.4dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="112dp"
+        android:src="@drawable/character_ver1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="2.3dp"
+        android:lineSpacingExtra="9sp"
+        android:text="Oh-mycard"
+        android:textColor="#ffffff"
+        android:textSize="26.7sp"
+        android:textStyle="bold" />
+    <LinearLayout
+        android:layout_gravity="center"
+        android:layout_marginTop="56dp"
+        android:layout_width="252.1dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/inputId"
+                android:layout_width="252.1dp"
+                android:layout_height="42.1dp"
+                android:background="@drawable/app_login_btn_id"
+                android:hint="아이디"
+                android:inputType="text"
+                android:paddingLeft="32dp"
+                android:textColorHint="#c9c9c9"
+                android:textSize="12.7dp" />
+            <EditText
+                android:paddingLeft="32dp"
+                android:layout_marginTop="10dp"
+                android:layout_width="252.1dp"
+                android:layout_height="42.1dp"
+                android:background="@drawable/app_login_btn_pw"
+                android:textSize="12.7dp"
+                android:id="@+id/inputPwd"
+                android:hint="비밀번호"
+                android:textColorHint="#c9c9c9"
+                android:inputType="text"/>
+
+            <Button
+                android:id="@+id/loginBtn"
+                android:layout_width="252dp"
+                android:layout_height="42.1dp"
+                android:layout_marginTop="10dp"
+
+                android:background="@drawable/app_login_btn_loginlogin"
+                android:textSize="20dp" />
+            <CheckBox
+                android:layout_marginTop="10.4dp"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:textSize="10sp"
+                android:textColor="#b3000000"
+                android:letterSpacing="0.09"
+                android:lineSpacingExtra="1.7sp"
+                android:text="자동로그인"
+                />
+            <TextView
+                android:id="@+id/btn_applogin_signup"
+                android:paddingTop="5dp"
+                android:background="#fedc82"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:textSize="12.7sp"
+                android:textColor="#b3000000"
+                android:letterSpacing="0.09"
+                android:lineSpacingExtra="2sp"
+                android:layout_gravity="center"
+                android:gravity="center_horizontal"
+                android:text="회원가입" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

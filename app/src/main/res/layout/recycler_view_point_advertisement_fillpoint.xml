@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rv_advertisement"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#f6f6f6"
+    android:layout_marginRight="9.3dp"
+    android:orientation="horizontal"
+    >
+
+    <LinearLayout
+        android:background="#f6f6f6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <ImageView
+            android:id="@+id/rv_iv_advertisement"
+            android:layout_width="93.3dp"
+            android:layout_height="136.7dp"
+            android:src="@drawable/advertisement1"/>
+        <LinearLayout
+            android:layout_marginTop="8dp"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/rv_tv_pluspointinfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="13.3sp"
+                android:textColor="#000000"
+                android:text="3400"
+                />
+            <ImageView
+                android:layout_marginLeft="1dp"
+                android:layout_width="16.7dp"
+                android:layout_height="16.7dp"
+                android:src="@drawable/app_point_pointstore_ic_point"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

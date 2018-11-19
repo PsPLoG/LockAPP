@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    tools:context=".activity.CardUsingShapeActivity">
+    <LinearLayout
+        android:background="#ffffff"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="55dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15.3dp"
+            android:gravity="center_horizontal"
+            android:letterSpacing="0.09"
+            android:lineSpacingExtra="2.7sp"
+            android:text="카드사용량 표시 형태"
+            android:textColor="#505050"
+            android:textSize="16.7sp"
+            android:textStyle="bold" />
+        <View
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_centerInParent="true"
+            android:background="#707070"/>
+    </LinearLayout>
+    <LinearLayout
+        android:background="#ffffff"
+        android:layout_marginTop="42.7dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <CheckBox
+
+            android:id="@+id/cb_shpae_bar"
+            android:layout_width="28dp"
+            android:layout_height="25dp"
+            android:layout_marginRight="11.7dp" />
+    <ImageView
+        android:src="@drawable/lock_gaugebar"
+        android:layout_marginRight="20.7dp"
+        android:layout_width="286.7dp"
+        android:layout_height="48.3dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:background="#ffffff"
+        android:layout_marginTop="42.7dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/cb_shpae_card"
+            android:layout_width="28dp"
+            android:layout_height="25dp"
+            android:layout_marginRight="11.7dp" />
+        <ImageView
+
+            android:src="@drawable/lock_cardbar"
+            android:layout_marginRight="20.7dp"
+            android:layout_width="286.7dp"
+            android:layout_height="48.3dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:background="#ffffff"
+        android:layout_marginTop="42.7dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/cb_shpae_circle"
+            android:layout_width="28dp"
+            android:layout_height="25dp"
+            android:layout_marginRight="11.7dp" />
+        <ImageView
+            android:src="@drawable/lock_circlebar"
+            android:layout_marginRight="20.7dp"
+            android:layout_width="286.7dp"
+            android:layout_height="48.3dp" />
+    </LinearLayout>
+</LinearLayout>
