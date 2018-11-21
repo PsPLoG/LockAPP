@@ -39,11 +39,10 @@
         android:layout_alignParentRight="true"
         android:text="1000000"
         android:textSize="11sp" />
-
     <LinearLayout
         android:layout_marginTop="8dp"
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:layout_below="@id/tv_account_history_balance"
-        android:background="#707070"></LinearLayout>
+        android:background="#b0b0b0"></LinearLayout>
 </RelativeLayout>

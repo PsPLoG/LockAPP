@@ -246,7 +246,7 @@ public class HttpClient {
     public static ArrayList<AccountHistoryItem> getCardHistory(int cardId) {
         Request request = new Request.Builder()
                 .addHeader("Authorization", "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJrZXlfc2xpZGUiLCJVU0VSTkFNRSI6ImtleSIsIlVTRVJfUk9MRSI6IlJPTEVfVVNFUiJ9.kxum_G7eqbL2BXmTr73tiLWzSxS4J6nISwBIArNPxd4")
-                .url("https://key.apps.dev.clayon.io/key/card/histories/"+cardId)
+                .url("https://key.apps.dev.clayon.io/key/card/histories/"+cardId+"?size=7")
                 .get()
                 .build();
         ArrayList list = new ArrayList<AccountHistoryItem>();

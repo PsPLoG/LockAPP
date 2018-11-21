@@ -25,8 +25,9 @@ class KbMainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_kb_main)
         val pager = findViewById<ViewPager>(R.id.vp_kb_main)
         pager.adapter = KbMainActivity.PagerAdapter(supportFragmentManager, this)
-
+        pager.offscreenPageLimit=3
         tl_main_top.setupWithViewPager(pager)
+
         val bottomNaviLayout : View = this.layoutInflater.inflate(R.layout.menu_topmenubar, null, false)
         tl_main_top.getTabAt(0)!!.customView = bottomNaviLayout.findViewById(R.id.btn_top_home) as RelativeLayout
         tl_main_top.getTabAt(1)!!.customView = bottomNaviLayout.findViewById(R.id.btn_top_select_card) as RelativeLayout

@@ -74,6 +74,10 @@ public class DataControl {
         SharedPreferences pref = context.getSharedPreferences("pref", Context.MODE_PRIVATE);
         return pref.getInt("locklimit1", 500000);
     }
+    public static int getLimit(Context context ,int id)  {
+        SharedPreferences pref = context.getSharedPreferences("pref", Context.MODE_PRIVATE);
+        return pref.getInt("locklimit"+id+1, 500000);
+    }
     public static void setLimit(Context context, double offset,int id) {
         SharedPreferences pref = context.getSharedPreferences("pref", Context.MODE_PRIVATE);
         SharedPreferences.Editor editor = pref.edit();

@@ -10,6 +10,7 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import com.bumptech.glide.Glide;
 import com.example.kmh.lockapp.activity.BuyPopActivity;
 import com.example.kmh.lockapp.R;
 
@@ -58,7 +59,7 @@ public class MyPointProductAdapter extends RecyclerView.Adapter<RecyclerView.Vie
             }
         });
         myViewHolder.rv_tv_rv_tv_price.setText(pointStoreProductDataArrayList.get(position).price);
-      //  Glide.with(getApplicationContext()).load(pointStoreProductDataArrayList.get(position).product_Image.getAdData()).into(ivPicture);
+      Glide.with(context).load(pointStoreProductDataArrayList.get(position).product_Image).into(myViewHolder.ivPicture);
     }
 
     @Override

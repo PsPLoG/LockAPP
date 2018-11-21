@@ -40,7 +40,7 @@ public class Detail_Point_StoreActivity extends AppCompatActivity {
         detailPointStoreProductDataArrayList.add(new DetailPointStoreProductData( "180","2400 포인트","[CU_롯데] 초코빼빼로","34"));// URL 넣어야함
         detailPointStoreProductDataArrayList.add(new DetailPointStoreProductData( "180","2400 포인트","[CU_롯데] 초코빼빼로","34"));// URL 넣어야함
 
-        DetailPointStoreProductAdapter mydetailPointStoreProductAdapter = new DetailPointStoreProductAdapter(detailPointStoreProductDataArrayList);
+        DetailPointStoreProductAdapter mydetailPointStoreProductAdapter = new DetailPointStoreProductAdapter(detailPointStoreProductDataArrayList,getApplicationContext());
         mRecyclerView.setAdapter(mydetailPointStoreProductAdapter);
     }
 }

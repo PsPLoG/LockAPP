@@ -13,6 +13,7 @@ import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.TextView
 import com.example.kmh.lockapp.R
 import com.example.kmh.lockapp.adapter.AccountHistoryAdapter
 import com.example.kmh.lockapp.adapter.AccountHistoryItem
@@ -61,6 +62,10 @@ class SelectCardFragment : Fragment()
             override fun onPostExecute(result: String?) {
                 super.onPostExecute(result)
                 view.vp_mycard_image.adapter=PagerAdapter(fragmentManager!!, context!!)
+                view.pb_selectcard_limit.progress= ((HttpClient.mlist.get(0).cardLimit/DataControl.getLimit(context,0))*100.0).toInt()
+                view.findViewById<TextView>(R.id.tv_select_card_limit).text="한도 "+DataControl.getLimit(context,0)+"원"
+                view.findViewById<TextView>(R.id.tv_select_card_pay).text="잔액 "+HttpClient.mlist.get(0).cardLimit+"원"
+
                 view.vp_mycard_image.addOnPageChangeListener(object : ViewPager.OnPageChangeListener {
                     override fun onPageScrollStateChanged(state: Int) {
                     }
@@ -68,12 +73,16 @@ class SelectCardFragment : Fragment()
                     }
                     override fun onPageSelected(position: Int) {
                         currentPage=position
-                        Log.d("viewp",HttpClient.mlist.get(position).cardLimit.toString()+" "+(HttpClient.mlist.get(position).cardLimit/100000)*100)
-                        view.pb_selectcard_limit.progress= ((HttpClient.mlist.get(position).cardLimit/100000.0)*100.0).toInt()
+                        Log.d("viewp",HttpClient.mlist.get(position).cardLimit.toString()+" "+(HttpClient.mlist.get(position).cardLimit/DataControl.getLimit(context,position))*100)
+                        view.pb_selectcard_limit.progress= ((HttpClient.mlist.get(position).cardLimit/DataControl.getLimit(context,position))*100.0).toInt()
+                        view.findViewById<TextView>(R.id.tv_select_card_limit).text="한도 "+DataControl.getLimit(context,position)+"원"
+                        view.findViewById<TextView>(R.id.tv_select_card_pay).text="잔액 "+HttpClient.mlist.get(position).cardLimit+"원"
                     }
                 })
                 view.findViewById<RecyclerView>(R.id.rv_select_card_list).adapter=AccountHistoryAdapter(context!!,list)
                 view.findViewById<RecyclerView>(R.id.rv_select_card_list).layoutManager=LinearLayoutManager(context)!!
+
+
             }
             override fun doInBackground(vararg p0: String?): String {
                 list = HttpClient.getCardHistory(1)
@@ -81,20 +90,12 @@ class SelectCardFragment : Fragment()
             }
         }
         a().execute()
-//        list.add(AccountHistoryItem("11월 11일","우리집",-8000,110000))
-//        list.add(AccountHistoryItem("11월 11일","우리집",-8000,110000))
-//        list.add(AccountHistoryItem("11월 11일","우리집",-8000,110000))
-//        list.add(AccountHistoryItem("11월 11일","우리집",-8000,110000))
-//        list.add(AccountHistoryItem("11월 11일","우리집",-8000,110000))
+
         var list1 = ArrayList<BenefitInfoItem>()
         list1.add(BenefitInfoItem("","[food] 음식업종","건당 2천원 청구할인","음식/주점"))
         list1.add(BenefitInfoItem("","[food] 배달App","건당 2천원 청구할인","배달의 민족, 배민찬, 마켓컬리"))
         list1.add(BenefitInfoItem("","[food] 커피 업종","건당 1천원 청구할인","커피전문점/제과점/아이스크림점"))
         list1.add(BenefitInfoItem("","알파원","5%할인","알파원 오토체인지 해시태그 대상 가맹점"))
-
-
-
-
 
         view.btn_select_card_benefit_info.setOnClickListener{
             btn_select_card_benefit_info.background=context!!.getDrawable(R.drawable.app_mycard_benefit_info_btn_click)

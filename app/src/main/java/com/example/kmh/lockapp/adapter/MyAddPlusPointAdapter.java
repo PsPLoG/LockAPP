@@ -10,6 +10,7 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import com.bumptech.glide.Glide;
 import com.example.kmh.lockapp.activity.AppPointPointPlusActivity;
 import com.example.kmh.lockapp.R;
 
@@ -60,7 +61,7 @@ public class MyAddPlusPointAdapter extends RecyclerView.Adapter<RecyclerView.Vie
                  context.startActivity(intent);
             }
         });
-       // Glide.with(getApplicationContext()).loadad_for_fill_pointDataArrayList.get(position).advertisement_image.getAdData()).into(rv_iv_advertisement);
+        Glide.with(context).load(ad_for_fill_pointDataArrayList.get(position).advertisement_image).into(myViewHolder.rv_iv_advertisement);
 
     }
 

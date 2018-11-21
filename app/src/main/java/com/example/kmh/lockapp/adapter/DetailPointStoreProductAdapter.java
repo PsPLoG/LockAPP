@@ -1,5 +1,6 @@
 package com.example.kmh.lockapp.adapter;
 
+import android.content.Context;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -7,6 +8,7 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.bumptech.glide.Glide;
 import com.example.kmh.lockapp.R;
 
 import java.util.ArrayList;
@@ -26,8 +28,10 @@ public class DetailPointStoreProductAdapter extends RecyclerView.Adapter<Recycle
     }
 
     private ArrayList<DetailPointStoreProductData> DetailPointStoreProductDataArrayList;
-    public DetailPointStoreProductAdapter(ArrayList<DetailPointStoreProductData> DetailPointStoreProductDataArrayList){
+    private Context context;
+    public DetailPointStoreProductAdapter(ArrayList<DetailPointStoreProductData> DetailPointStoreProductDataArrayList, Context context){
         this.DetailPointStoreProductDataArrayList = DetailPointStoreProductDataArrayList;
+        this.context=context;
     }
 
     @Override
@@ -50,7 +54,7 @@ public class DetailPointStoreProductAdapter extends RecyclerView.Adapter<Recycle
         });
         myViewHolder.rv_tv_detail_store_price.setText(DetailPointStoreProductDataArrayList.get(position).Detail_price);
         myViewHolder.tv_rv_detail_product_name.setText(DetailPointStoreProductDataArrayList.get(position).Detail_name);
-       //Glide.with(getApplicationContext()).load(DetailPointStoreProductDataArrayList.get(position).Detail_product_image.getAdData()).into(iv_detail_pointstore_product);
+       Glide.with(context).load(DetailPointStoreProductDataArrayList.get(position).Detail_product_image).into(myViewHolder.iv_detail_pointstore_product);
     }
 
     @Override
